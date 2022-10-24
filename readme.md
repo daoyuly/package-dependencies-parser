@@ -1,6 +1,6 @@
 # package dependencies viewer
 
-parse dependencies or devDependencies, pass this, you will know how many npm your app dependent.
+parse dependencies or devDependencies, and you will know how many npm your app dependent.
 ## usgae
 
 - ``` git clone  git@github.com:daoyuly/package-dependencies-parser.git``` 
