@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>依赖查看器</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+  <script src="./tree-data.js"></script>
+</head>
+
+<body>
+  <div id="jstree_demo_div"></div>
+  <script>
+    var data = {
+      'core': {
+        'data': window.__package_tree_data
+      }
+    }
+    $(function () {
+      $('#jstree_demo_div').on('changed.jstree', function (e, data) {
+        const url =  `https://www.npmjs.com/package/${data.node.text}`
+        window.open(url)
+      }).jstree(data);
+    });
+  </script>
+</body>
+
+</html>
