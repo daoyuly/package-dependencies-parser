@@ -1,17 +1,18 @@
-# 依赖查看
+# package dependencies viewer
 
-## 使用
+parse dependencies or devDependencies, pass this, you will know how many npm your app dependent.
+## usgae
 
-- ``` git clone  ``` 
+- ``` git clone  git@github.com:daoyuly/package-dependencies-parser.git``` 
 
-- 将 ```package.json``` 和 ```package-lock.json``` 拷贝到根目录下
+- copy ```package.json``` 和 ```package-lock.json``` to project root dir
 
 - ``` node index.js ```
 
 - ```open ./viewer/index.html```
 
 
-## vscode插件使用
+## vscode extends
 
-##  关于树组件
+##  about tree component
 https://www.jstree.com/
